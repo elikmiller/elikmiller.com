@@ -26,9 +26,9 @@ body:after {
 }
 
 div.card {
-    padding: 4rem;
+    padding-left: 4rem;
     position: absolute;
-    top: 15%;
+    top: 20%;
 }
 
 h1.name {
@@ -65,7 +65,7 @@ ul.contact-info {
 li.contact-info-item {
     display: inline-block;
     font-size: 3rem;
-    margin-right: 2rem;
+    margin-right: 1em;
     opacity: 0;
 }
 
@@ -110,7 +110,7 @@ a.contact-info-link:active {
 
 @media (min-width: 576px) { 
     html {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
