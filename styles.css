@@ -1,0 +1,125 @@
+html {
+    height: 100%;
+    width: 100%;
+    font-size: 8px;
+}
+
+body {
+    background-color: #121214;
+    background-image: url('./escheresque.png'); /* Background pattern from Toptal Subtle Patterns */
+    box-sizing: border-box;
+    color: #f7f7ff;
+    font-family: 'Quicksand', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+}
+
+body:after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: radial-gradient(circle, transparent 0%, #000 300%);
+    mix-blend-mode: difference;
+    pointer-events: none;
+}
+
+div.card {
+    padding: 4rem;
+    position: absolute;
+    top: 15%;
+}
+
+h1.name {
+    animation: fadein 2s ease-in-out 0s;
+    animation-fill-mode: forwards;
+    font-family: 'Raleway', sans-serif;
+    font-size: 5rem;
+    font-weight: normal;
+    line-height: normal;
+    margin: 0 0 1.5rem;
+    opacity: 0;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+h2.title {
+    animation: fadein 2s ease-in-out 0.1s;
+    animation-fill-mode: forwards;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0 0 1.5rem;
+    opacity: 0;
+    white-space: nowrap;
+}
+
+ul.contact-info {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li.contact-info-item {
+    display: inline-block;
+    font-size: 3rem;
+    margin-right: 2rem;
+    opacity: 0;
+}
+
+#github {
+    animation: fadein 2s ease-in-out 0.2s;
+    animation-fill-mode: forwards;
+}
+
+#linkedin {
+    animation: fadein 2s ease-in-out 0.3s;
+    animation-fill-mode: forwards;
+}
+
+#email {
+    animation: fadein 2s ease-in-out 0.4s;
+    animation-fill-mode: forwards;
+}
+
+a.contact-info-link {
+    color: #f7f7ff;
+    outline: none;
+    transition: color ease-in-out 0.05s;
+}
+
+a.contact-info-link:hover,
+a.contact-info-link:focus {
+    color: #2c75ff;
+}
+
+a.contact-info-link:active {
+    color: #235dcc;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to { 
+        opacity: 1;
+    }
+}
+
+@media (min-width: 576px) { 
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) { 
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
