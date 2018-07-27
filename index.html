@@ -8,7 +8,8 @@
     <meta name="description" content="Front-End Developer">
     <meta name="author" content="Eli K Miller">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:300|Raleway">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -31,12 +32,18 @@
                 </a>
             </li>
             <li id="email" class="contact-info-item">
-                <a class="contact-info-link" href="mailto:eli@elikmiller.com">
+                <a class="contact-info-link" href="">
                     <i class="fas fa-envelope-square"></i>
                 </a>
             </li>
         </ul>
     </div>
+
+    <script>
+        // https://repl.it/@elikmiller/ObfuscateEmail
+        for(ML="ka:imtcoe@l.r",MI="413:5728:398:3043::8<;674",OT="",j=0;j<MI.length;j++)OT+=ML.charAt(MI.charCodeAt(j)-48);
+        document.querySelector("#email a.contact-info-link").href=OT;
+    </script>
 </body>
 
 </html>
